@@ -1,5 +1,5 @@
 
-var id = 43;
+var id = 50;
 
 var dataItems = [255];
 
@@ -40,8 +40,6 @@ function setup() {
   console.log(dataItems);
 }
 
-
-
 var b = 0;
 
 function draw() {
@@ -53,7 +51,7 @@ function draw() {
   if (b <= dataItems.length) {
     bit = b % dataItems.length;
     var col = 0;
-    fill(dataItems[bit] * 1);
+    fill(dataItems[bit] * 0.13);
     rect(0, 0, 150, 150);
   }
   b++;
